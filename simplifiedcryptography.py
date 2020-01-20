@@ -25,4 +25,3 @@ def key_from_password(provided):
     kdf=PBKDF2HMAC(algorithm=hashes.SHA3_256(),length=32,salt=salt,iteration=1000,backend=default_backend())
     key=base64.urlsafe_b64decode(kdf.derive(password_provided))
     return key.decode()
-print(random_key())
