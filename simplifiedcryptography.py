@@ -1,3 +1,5 @@
+#I use this module because I don't really know cryptography beyond the basics
+#this helps me use cryptography in other projects without thinking much about it
 from cryptography.fernet import Fernet
 import base64
 from cryptography.hazmat.backends import default_backend
